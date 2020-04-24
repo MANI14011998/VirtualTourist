@@ -33,11 +33,6 @@ class MapViewController: UIViewController {
          refreshData()
      }
 
-     
-     override func viewWillDisappear(_ animated: Bool) {
-         super.viewWillDisappear(animated)
-       
-     }
     
 
     @IBAction func longPressOnMap(_ sender: UILongPressGestureRecognizer) {
@@ -89,7 +84,6 @@ class MapViewController: UIViewController {
         photoAlbumViewController.dataController = dataController
     }
 
-      //  let pinAnnotation: AnnotationPinView = sender as! AnnotationPinView
 
 }
 
@@ -165,15 +159,6 @@ class MapViewController: UIViewController {
             mapView.setRegion(MKCoordinateRegion(center: center, span: span), animated: true)
         }
     }
-    
-//    func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
-//        guard let annotation = view.annotation else { return }
-//
-//        let pinAnnotation = annotation as! AnnotationPin
-//        performSegue(withIdentifier: "showPhotoAlbum",  sender: pinAnnotation)
-//
-//        mapView.deselectAnnotation(view.annotation, animated: false)
-//    }
 
     func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
 

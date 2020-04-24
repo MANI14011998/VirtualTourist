@@ -46,7 +46,6 @@ extension AlbumCollectionViewController: UICollectionViewDelegate, UICollectionV
                         }
                         
                         let image = UIImage(data: imageData)!
-                      //  print("index is: \(indexPath.row)")
                         cell.setPhotoImageView(imageView: image, sizeFit: true)
          
                     }
@@ -64,10 +63,6 @@ extension AlbumCollectionViewController: UICollectionViewDelegate, UICollectionV
         newCollectionButton.isEnabled = true
         return cell
     }
-//    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//        let cell = collectionView.cellForItem(at: indexPath as IndexPath) as! PhotoViewCell
-//
-//    }
     /// Set up the Collection View.
     func setUpCollectionView() {
         // Set up Collection View

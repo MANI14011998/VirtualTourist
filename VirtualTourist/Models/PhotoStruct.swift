@@ -17,12 +17,11 @@ struct PhotoStruct: Codable {
     let title: String
     let ispublic, isfriend, isfamily: Int
     let url_m: String
-//    let heightM, widthM: String
     
     enum CodingKeys: String, CodingKey {
         case id, owner, secret, server, farm, title, ispublic, isfriend, isfamily
         case url_m = "url_m"
-//        case heightM = "height_m"
-//        case widthM = "width_m"
+
     }
 }
+
